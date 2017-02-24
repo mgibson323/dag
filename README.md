@@ -1,4 +1,4 @@
-#Domain At Glance
+##Domain At Glance
 
 DAG is a simple bash script used to get quick information about a domain. It searches for DNS records, WHOIS information, and HTTP status. 
 
