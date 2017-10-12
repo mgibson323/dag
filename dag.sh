@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Domain At Glance, aka dag
-#Use dig, whois, and curl to get a quick overview of a domain's information
+#Use dig, whois, curl, and nmap to get a quick overview of a domain's information
 #for the purpose of troubleshooting hosting issues with domains.
 
 
@@ -185,8 +185,15 @@ else
     echo -e "${RD}$STATUS${NC}"
 fi
 }
-
+nmap-info(){
+STATUS=$(nmap ${domain})
+echo -e "${MH}---------------------------Open Ports for ${domain}---------------------------${NC}"
+echo
+echo -e "${RD}$STATUS${NC}"
+echo
+}
 #Output everything
 dns-info
 who-info
 http-info
+namp-info
