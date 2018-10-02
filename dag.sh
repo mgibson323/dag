@@ -196,4 +196,4 @@ echo
 dns-info
 who-info
 http-info
-namp-info
+nmap-info
