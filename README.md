@@ -18,8 +18,11 @@ It's not much, but this was the first "program" I've ever written, and it was wh
 
 ## Install
 
-Clone the repo, chmod +x the dag script, shove it in one of your $PATH directories.
-
+Clone the repo, build an image from the enclosed Dockerfile, then use that to run the script in an ephemeral container:
+> docker image build -t dag .
+> docker container run --rm dag {domain}
+Or, pull the image from Docker Hub: 
+> docker pull mgibson323/dag; docker container run --rm mgibson323/dag {domain}
 ## License
 
 This has no license - use it however you want.  
