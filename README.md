@@ -10,7 +10,7 @@
 
 ## Description
 
-@namhokim wrote this script to use at work - where we are constantly checking domain information. This tool grabs a lot of the important information at once, cutting down some time in our workflow. 
+@namho-kim wrote this script to use at work - where we are constantly checking domain information. This tool grabs a lot of the important information at once, cutting down some time in our workflow. 
 
 Because I use OSX at work, this tool was tested mostly for OSX use. I have found that certain Linux distros may not be able to properly run this app. Also, WHOIS outputs from the bash whois/jwhois is a bit inconsistent. 
 
